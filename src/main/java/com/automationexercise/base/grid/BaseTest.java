@@ -79,6 +79,156 @@ public class BaseTest {
         log = LogManager.getLogger(testName);
     }
 
+    // waiting for Web Element to be visible
+    protected void waitForElement(WebDriver driver, WebElement element){
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+            wait.until(ExpectedConditions.visibilityOf(element));
+        }
+        catch(TimeoutException e){
+            System.err.println(element + "Couldn't find element after waiting" + "\n");
+            e.printStackTrace();
+        }
+        catch (NoSuchElementException e){
+            System.err.println("Unable to locate element with xpath: " + element + "\n");
+            e.printStackTrace();
+        }
+        catch(ElementNotVisibleException e){
+            System.err.println(element + "is not visible" + "\n");
+            e.printStackTrace();
+        }
+    }
+
+    // waiting for url to change after clicking a Web Element and asserting if it redirects to the expected URL
+    protected void assertUrls(WebDriver driver, String expectedUrl) {
+        try{
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            wait.until(ExpectedConditions.urlToBe(expectedUrl));
+            log.info("URL verification is complete.");
+        }
+        catch(TimeoutException e){
+            System.err.println("Could not find the required URL after waiting");
+            System.err.println("Expected to be redirected to: " + expectedUrl);
+            System.err.println("Instead redirected to: " + driver.getCurrentUrl() + "\n");
+            e.printStackTrace();
+        }
+    }
+
+    protected void clickOnElementAndAssertUrl(WebDriver driver, WebElement element, String expectedUrl) {
+        System.out.println(" ");
+        clickOnElement(driver, element);
+        assertUrls(driver, expectedUrl);
+    }
+
+    //clicks on an element that does not redirect to another page
+    protected void clickOnElement(WebDriver driver, WebElement element){
+        try {
+            waitForElement(driver, element);
+            String text = element.getText();
+            clickOnElementAndDisplayeText(driver, element, text);
+        }
+        catch (NoSuchElementException e){
+            log.info("Unable to locate element with xpath: " + element + "\n");
+            e.printStackTrace();
+        }
+    }
+
+    protected void clickOnElementAndDisplayeText(WebDriver driver, WebElement element, String textToBeDisplayed) {
+        System.out.println(" ");
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        try {
+            js.executeScript("arguments[0].scrollIntoView(true);", element);
+            js.executeScript("arguments[0].click();", element);
+            log.info("Clicked " + textToBeDisplayed + "\n");
+        }
+        catch (NoSuchElementException e){
+            log.info("Unable to locate element with xpath: " + element + "\n");
+            e.printStackTrace();
+        }
+        catch (ElementClickInterceptedException e){
+            System.err.println(textToBeDisplayed + " can not be clicked" + "\n");
+            e.printStackTrace();
+        }
+        catch (ElementNotInteractableException e) {
+            System.err.println(textToBeDisplayed + " is not interactable with" + "\n");
+            e.printStackTrace();
+        }
+    }
+
+    // Confirm text that is displayed
+    protected boolean isTextDisplayed(WebElement element, String text) {
+        boolean flag = true;
+        try {
+            String data = element.getText();
+            Assert.assertEquals(data, text);
+            log.info("Text verification is complete. The displayed text: " + text);
+        } catch (java.lang.AssertionError e) {
+            e.printStackTrace();
+            flag = false;
+        } catch (NoSuchElementException e) {
+            System.err.println("Unable to find element" + element);
+            e.printStackTrace();
+        }
+        return flag;
+    }
+
+    // Type content to an element
+    protected void sendKeys(WebDriver driver, WebElement element, String data) {
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView(true);", element);
+            js.executeScript("arguments[0].click();", element);
+            element.sendKeys(data);
+            log.info("Added to the " + element.getAttribute("id") + ": " + data);
+        } catch (NoSuchElementException e) {
+            System.err.println("Unable to find element" + element);
+        } catch (ElementNotInteractableException e) {
+            System.err.println(element + "is not interactable");
+        }
+    }
+
+    // Select one option from the dropdown list
+    protected void selectDropdownItem(WebElement element, String option) {
+        try {
+            Select drpElement = new Select(element);
+            drpElement.selectByVisibleText(option);
+            log.info("It is selected: " + option + " from: " + element.getAttribute("name"));
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (ElementClickInterceptedException e) {
+            e.printStackTrace();
+        } catch (UnexpectedTagNameException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Clear content to an element
+    protected void clearData(WebElement element) {
+        try {
+            element.clear();
+            log.info("Data is deleted for: " + element.getAttribute("id"));
+        } catch (NoSuchElementException e) {
+            System.err.println("Unable to find element" + element);
+        } catch (InvalidElementStateException e){
+            System.err.println("Unable to clear the element that can not be edited " + element);
+        }
+    }
+
+
+    protected void hoverElement(WebDriver driver, WebElement element, String textDisplayed) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        Actions actions = new Actions(driver);
+        try {
+            js.executeScript("arguments[0].scrollIntoView();", element);
+            actions.moveToElement(element).build().perform();
+            log.info(textDisplayed);
+        } catch (NoSuchElementException e) {
+            System.err.println("Unable to locate element: " + element);
+        } catch (ElementNotInteractableException e) {
+            e.printStackTrace();
+        }
+    }
+
     @AfterMethod(alwaysRun = true)
     protected void tearDown() {
         // Closing driver

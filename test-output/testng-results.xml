@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-22T22:49:19 CEST" name="PositiveTestSuite" finished-at="2022-06-22T22:53:28 CEST" duration-ms="248781">
+    <groups>
+    </groups>
+    <test started-at="2022-06-22T22:49:19 CEST" name="PositiveTest-CH" finished-at="2022-06-22T22:50:53 CEST" duration-ms="94322">
+      <class name="com.automationexercise.test.cases.LogInTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.LogInTest@691a7f8f]" started-at="2022-06-22T22:49:58 CEST" name="setUp" finished-at="2022-06-22T22:50:03 CEST" duration-ms="5736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5db250b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestCases()[pri:0, instance:com.automationexercise.test.cases.LogInTest@691a7f8f]" started-at="2022-06-22T22:50:03 CEST" name="loginTestCases" finished-at="2022-06-22T22:50:11 CEST" duration-ms="7564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.LogInTest@691a7f8f]" started-at="2022-06-22T22:50:11 CEST" name="tearDown" finished-at="2022-06-22T22:50:11 CEST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.LogInTest -->
+      <class name="com.automationexercise.test.cases.SignUpTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.SignUpTest@780cb77]" started-at="2022-06-22T22:49:19 CEST" name="setUp" finished-at="2022-06-22T22:49:36 CEST" duration-ms="17153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5db250b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpTestCases()[pri:0, instance:com.automationexercise.test.cases.SignUpTest@780cb77]" started-at="2022-06-22T22:49:36 CEST" name="signUpTestCases" finished-at="2022-06-22T22:49:57 CEST" duration-ms="21337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.SignUpTest@780cb77]" started-at="2022-06-22T22:49:57 CEST" name="tearDown" finished-at="2022-06-22T22:49:58 CEST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.SignUpTest -->
+      <class name="com.automationexercise.test.cases.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@50a7bc6e]" started-at="2022-06-22T22:50:11 CEST" name="setUp" finished-at="2022-06-22T22:50:17 CEST" duration-ms="6129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5db250b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutTestCases()[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@50a7bc6e]" started-at="2022-06-22T22:50:17 CEST" name="checkoutTestCases" finished-at="2022-06-22T22:50:53 CEST" duration-ms="35866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@50a7bc6e]" started-at="2022-06-22T22:50:53 CEST" name="tearDown" finished-at="2022-06-22T22:50:53 CEST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.CheckoutTest -->
+    </test> <!-- PositiveTest-CH -->
+    <test started-at="2022-06-22T22:50:58 CEST" name="PositiveTest-FF" finished-at="2022-06-22T22:51:57 CEST" duration-ms="59238">
+      <class name="com.automationexercise.test.cases.LogInTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.LogInTest@6107227e]" started-at="2022-06-22T22:51:21 CEST" name="setUp" finished-at="2022-06-22T22:51:27 CEST" duration-ms="6661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@223f3642]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestCases()[pri:0, instance:com.automationexercise.test.cases.LogInTest@6107227e]" started-at="2022-06-22T22:51:27 CEST" name="loginTestCases" finished-at="2022-06-22T22:51:33 CEST" duration-ms="5290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.LogInTest@6107227e]" started-at="2022-06-22T22:51:33 CEST" name="tearDown" finished-at="2022-06-22T22:51:33 CEST" duration-ms="553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.LogInTest -->
+      <class name="com.automationexercise.test.cases.SignUpTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.SignUpTest@5db45159]" started-at="2022-06-22T22:50:58 CEST" name="setUp" finished-at="2022-06-22T22:51:04 CEST" duration-ms="5535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@223f3642]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpTestCases()[pri:0, instance:com.automationexercise.test.cases.SignUpTest@5db45159]" started-at="2022-06-22T22:51:04 CEST" name="signUpTestCases" finished-at="2022-06-22T22:51:20 CEST" duration-ms="16154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.SignUpTest@5db45159]" started-at="2022-06-22T22:51:20 CEST" name="tearDown" finished-at="2022-06-22T22:51:21 CEST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.SignUpTest -->
+      <class name="com.automationexercise.test.cases.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@7c417213]" started-at="2022-06-22T22:51:33 CEST" name="setUp" finished-at="2022-06-22T22:51:37 CEST" duration-ms="3566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@223f3642]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutTestCases()[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@7c417213]" started-at="2022-06-22T22:51:37 CEST" name="checkoutTestCases" finished-at="2022-06-22T22:51:57 CEST" duration-ms="20237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@7c417213]" started-at="2022-06-22T22:51:57 CEST" name="tearDown" finished-at="2022-06-22T22:51:57 CEST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.CheckoutTest -->
+    </test> <!-- PositiveTest-FF -->
+    <test started-at="2022-06-22T22:52:03 CEST" name="PositiveTest-ME" finished-at="2022-06-22T22:53:28 CEST" duration-ms="85035">
+      <class name="com.automationexercise.test.cases.LogInTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.LogInTest@19d37183]" started-at="2022-06-22T22:52:28 CEST" name="setUp" finished-at="2022-06-22T22:52:34 CEST" duration-ms="6160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@38c5cc4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestCases()[pri:0, instance:com.automationexercise.test.cases.LogInTest@19d37183]" started-at="2022-06-22T22:52:34 CEST" name="loginTestCases" finished-at="2022-06-22T22:52:40 CEST" duration-ms="6404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.LogInTest@19d37183]" started-at="2022-06-22T22:52:40 CEST" name="tearDown" finished-at="2022-06-22T22:52:40 CEST" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.LogInTest -->
+      <class name="com.automationexercise.test.cases.SignUpTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.SignUpTest@71c8becc]" started-at="2022-06-22T22:52:03 CEST" name="setUp" finished-at="2022-06-22T22:52:10 CEST" duration-ms="7535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@38c5cc4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpTestCases()[pri:0, instance:com.automationexercise.test.cases.SignUpTest@71c8becc]" started-at="2022-06-22T22:52:10 CEST" name="signUpTestCases" finished-at="2022-06-22T22:52:28 CEST" duration-ms="17492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.SignUpTest@71c8becc]" started-at="2022-06-22T22:52:28 CEST" name="tearDown" finished-at="2022-06-22T22:52:28 CEST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.SignUpTest -->
+      <class name="com.automationexercise.test.cases.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@1a0dcaa]" started-at="2022-06-22T22:52:40 CEST" name="setUp" finished-at="2022-06-22T22:52:48 CEST" duration-ms="7650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@38c5cc4c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutTestCases()[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@1a0dcaa]" started-at="2022-06-22T22:52:48 CEST" name="checkoutTestCases" finished-at="2022-06-22T22:53:27 CEST" duration-ms="39208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTestCases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.test.cases.CheckoutTest@1a0dcaa]" started-at="2022-06-22T22:53:27 CEST" name="tearDown" finished-at="2022-06-22T22:53:28 CEST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.test.cases.CheckoutTest -->
+    </test> <!-- PositiveTest-ME -->
+  </suite> <!-- PositiveTestSuite -->
+</testng-results>
